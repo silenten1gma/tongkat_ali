@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* general */ 
+body{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.6rem;
+}
+
+.btn {
+    color:black;
+    text-decoration: none;
+    border: black 4px solid;
+    padding:5px 7px;
+    transition: ease-in-out 0.3s;
+}
+
+
+
+.btn:hover{
+    background: black;
+    color:white;
+    transition: ease-in-out 0.3s;
+}
+
+
+.red{
+    color:red;
+}
+
+section, .images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 350px;
+}
+
+.text{
+    max-width:650px;
+    margin: 25px 0;
+}
+    
+.text p {
+    margin:25px 0;
+}
+
+/* landing */
+#landing{
+    min-height: 100vh;
+}
+/* awards */ 
+#awards{
+    min-height: 60vh;
+    background: black;
+}
+
+#awards img{
+    width: 250px;
+}
+
+/* definition section */
+#definition, #how_it_works{
+    color:white;
+    background-color: black;
+}
+/* Ingredients */
+
+#inger{
+    flex-direction: column;
+}
+
+/* how_it_works */ 
+#how_it_works{
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    section, .images {
+      flex-direction: column;
+    }
+    .text{
+        margin: 25px;
+    }
+
+    img{
+        width: 350px;
+    }
+    #definition{
+        padding: 25px;
+    }
+    .links{
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  }
